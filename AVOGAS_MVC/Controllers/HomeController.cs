@@ -26,5 +26,19 @@ namespace AVOGAS_MVC.Controllers
 
             return View();
         }
+
+        public ActionResult Login()
+        {
+            ViewBag.Message = "Welcome to login page...";
+
+            return View();
+        }
+
+        public ActionResult Registration()
+        {
+            ViewBag.Message = "Claim your place in us!";
+
+            return View();
+        }
     }
 }
