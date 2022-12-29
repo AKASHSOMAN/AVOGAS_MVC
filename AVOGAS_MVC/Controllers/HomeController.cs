@@ -92,7 +92,7 @@ namespace AVOGAS_MVC.Controllers
                 if (dt.Rows.Count > 0)
                     return RedirectToAction("Dashboard");
                 else
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Login");
 
             }
             else
