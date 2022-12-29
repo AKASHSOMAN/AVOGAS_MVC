@@ -80,7 +80,7 @@ namespace AVOGAS_MVC.Controllers
         }
         /// Login process
         
-        public ActionResult Login(FormCollection frm, string action)
+        public ActionResult LoginCust(FormCollection frm, string action)
         {
             if (action == "Submit")
             {
