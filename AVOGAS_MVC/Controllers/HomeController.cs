@@ -82,7 +82,7 @@ namespace AVOGAS_MVC.Controllers
         
         public ActionResult LoginCust(FormCollection frm, string action)
         {
-            if (action == "Submit")
+            if (action == "Login")
             {
                 Avogas_Model model = new Avogas_Model();
                 string name = frm["txtUser"];
@@ -92,12 +92,12 @@ namespace AVOGAS_MVC.Controllers
                 if (dt.Rows.Count > 0)
                     return RedirectToAction("Dashboard");
                 else
-                    return RedirectToAction("Login");
+                    return RedirectToAction("Index");
 
             }
             else
             {
-                return RedirectToAction("Index1");
+                return RedirectToAction("Login");
             }
         }
     }
