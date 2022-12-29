@@ -1,7 +1,32 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Registration";
 }
 
-<h2>Registration</h2>
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<!DOCTYPE html>
 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+</head>
+<body>
+    <div>
+        <form id="frmDetail" method="post" action="@Url.Action("InsertRecord")">
+            Enter First Name:<input name="txtFirst" />
+            <br />
+            Enter Last Name:<input name="txtLast" />
+            <br />
+            Enter Aadhaar No:<input name="txtAadhaar" />
+            <br />
+            Enter Mobile No:<input name="txtMobile" />
+            <br />
+            Enter Password :<input name="txtPassw" />
+            <br />
+            <input type="submit" value="Submit" name="action" />
+            <input type="submit" value="Cancel" name="action" />
+        </form>
+    </div>
+</body>
+</html>
